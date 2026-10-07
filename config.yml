@@ -1,0 +1,193 @@
+project:
+  name: "Personal Portfolio"
+  goal: "Migrate the existing HTML/CSS/JavaScript portfolio to React.js"
+
+  migration_type: "refactoring"
+  
+  important:
+    - "This is NOT a redesign."
+    - "Preserve the existing visual design."
+    - "Preserve all existing functionality."
+    - "Do not change portfolio content unnecessarily."
+
+technology:
+  framework: "React"
+  language: "JavaScript"
+  syntax: "JSX"
+  build_tool: "Vite"
+
+  forbidden:
+    - "TypeScript"
+    - "Tailwind CSS"
+    - "UI component libraries"
+    - "Unnecessary dependencies"
+
+architecture:
+  principles:
+    - "Use reusable React components."
+    - "Keep components small and understandable."
+    - "Avoid one giant App component."
+    - "Use props for reusable components."
+    - "Use data-driven rendering where appropriate."
+    - "Separate portfolio data from UI components."
+
+  recommended_structure:
+    - "src/components/"
+    - "src/data/"
+    - "src/assets/"
+    - "src/styles/"
+    - "src/App.jsx"
+    - "src/main.jsx"
+
+components:
+  identify_and_create:
+    - "Navbar"
+    - "Hero"
+    - "About"
+    - "Skills"
+    - "SkillCard"
+    - "Projects"
+    - "ProjectCard"
+    - "Experience"
+    - "ExperienceItem"
+    - "Education"
+    - "Contact"
+    - "Footer"
+
+  rule: >
+    Do not create components unnecessarily.
+    Only create a component when it represents a meaningful
+    reusable or independent UI section.
+
+javascript_migration:
+  rule: >
+    Migrate existing Vanilla JavaScript functionality
+    to React properly.
+
+  use:
+    - "useState"
+    - "useEffect"
+    - "useRef"
+
+  avoid:
+    - "document.querySelector()"
+    - "document.getElementById()"
+    - "element.innerHTML"
+    - "manual DOM manipulation"
+    - "unnecessary direct DOM manipulation"
+
+  preserve:
+    - "Mobile navigation"
+    - "Scroll effects"
+    - "Animations"
+    - "Interactive elements"
+    - "Forms"
+    - "Modals"
+    - "Sliders"
+    - "Dark/light mode"
+    - "Typing effects"
+    - "Filtering"
+    - "Other existing functionality"
+
+css:
+  migration:
+    - "Preserve existing design."
+    - "Reuse existing CSS where possible."
+    - "Remove duplicate CSS."
+    - "Remove unused CSS."
+    - "Organize styles logically."
+
+  forbidden:
+    - "Do not redesign the UI."
+    - "Do not replace CSS with Tailwind."
+
+assets:
+  preserve:
+    - "Images"
+    - "Icons"
+    - "Fonts"
+    - "CV"
+    - "Other existing assets"
+
+  requirements:
+    - "Fix broken asset paths."
+    - "Use proper React/Vite imports."
+    - "Verify all assets load correctly."
+
+data:
+  rule: >
+    Separate repeated portfolio content from components
+    when appropriate.
+
+  examples:
+    - "Projects"
+    - "Skills"
+    - "Experience"
+    - "Education"
+    - "Social links"
+
+quality:
+  code:
+    - "Clean"
+    - "Readable"
+    - "Beginner-friendly"
+    - "Maintainable"
+    - "Reusable"
+    - "No unnecessary duplication"
+
+  avoid:
+    - "Unused files"
+    - "Unused dependencies"
+    - "Duplicate code"
+    - "Hardcoded repeated markup"
+    - "Unnecessary complexity"
+
+testing:
+  verify:
+    - "Navbar"
+    - "Mobile navigation"
+    - "Hero"
+    - "About"
+    - "Skills"
+    - "Projects"
+    - "Experience"
+    - "Education"
+    - "Contact"
+    - "Social links"
+    - "Animations"
+    - "Responsive design"
+    - "Images"
+    - "Fonts"
+    - "CV/download links"
+    - "External links"
+    - "Forms"
+    - "Existing interactions"
+
+  build_command: "npm run build"
+
+cleanup:
+  rules:
+    - "Remove obsolete HTML files after migration."
+    - "Remove obsolete JavaScript files after migration."
+    - "Remove unused CSS."
+    - "Remove unused dependencies."
+    - "Remove unused assets."
+    - "Never delete a file before confirming it is unused."
+
+workflow:
+  steps:
+    - "Analyze the existing project."
+    - "Understand the current HTML structure."
+    - "Understand the CSS architecture."
+    - "Understand all JavaScript functionality."
+    - "Identify reusable components."
+    - "Create the React/Vite architecture."
+    - "Migrate HTML to JSX."
+    - "Migrate JavaScript functionality to React."
+    - "Migrate and organize CSS."
+    - "Fix asset paths."
+    - "Test the application."
+    - "Run npm run build."
+    - "Fix all migration-related errors."
+    - "Clean up obsolete files."
+    - "Provide a final migration report."
