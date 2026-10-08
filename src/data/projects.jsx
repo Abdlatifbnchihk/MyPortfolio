@@ -1,3 +1,8 @@
+import image0 from '../assets/Project_Images/image-0.png';
+import image1 from '../assets/Project_Images/image-1.png';
+import image2 from '../assets/Project_Images/image-2.png';
+import image3 from '../assets/Project_Images/image-3.png';
+
 export const projects = [
   {
     title: 'Social Media Web App',
@@ -11,7 +16,7 @@ export const projects = [
     ],
     github: 'https://github.com/Abdlatifbnchihk/A_Community',
     idx: 0,
-    image: 'src/assets/Project_Images/image-0.png',
+    image: image0,
   },
   {
     title: 'Prompt Vault — Internal Prompt Platform',
@@ -25,7 +30,7 @@ export const projects = [
     ],
     github: 'https://github.com/Abdlatifbnchihk/prompt_repository',
     idx: 1,
-    image: 'src/assets/Project_Images/image-1.png',
+    image: image1,
   },
   {
     title: 'TaskFlow — Project Management App',
@@ -39,7 +44,7 @@ export const projects = [
     ],
     github: 'https://github.com/Abdlatifbnchihk/Task-Manager',
     idx: 2,
-    image: 'src/assets/Project_Images/image-2.png',
+    image: image2,
   },
   {
     title: 'DevTrack — Team Collaboration Platform',
@@ -52,7 +57,7 @@ export const projects = [
     ],
     github: 'https://github.com/Abdlatifbnchihk/DevTrack',
     idx: 3,
-    image: 'src/assets/Project_Images/image-3.png',
+    image: image3,
   },
   {
     title: 'CandidatureTracker — Job Application Management',
@@ -66,6 +71,6 @@ export const projects = [
     ],
     github: 'https://github.com/Abdlatifbnchihk/Candidature_Tracker-',
     idx: 4,
-    image: 'src/assets/Project_Images/image-0.png',
+    image: image0,
   },
 ];

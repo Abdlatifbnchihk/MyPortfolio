@@ -7,7 +7,7 @@ export default function Footer() {
         </p>
         <nav className="foot-links" aria-label="Footer">
           <a href="mailto:abdellatifbencheikh43@gmail.com">Email</a>
-          <a href="https://github.com/abdellatif-bencheikh" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Abdlatifbnchihk/MyPortfolio" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </nav>

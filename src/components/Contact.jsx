@@ -300,7 +300,7 @@ export default function Contact({ revealRef }) {
               <span className="tile-ico" aria-hidden="true"><GitHubIcon /></span>
               <span className="tile-text">
                 <span className="tile-label">GitHub</span>
-                <a href='https://github.com/Abdlatifbnchihk' className="tile-value">github.com/abdellatif-bencheikh</a>
+                <a href='https://github.com/Abdlatifbnchihk/MyPortfolio' className="tile-value">github.com/abdellatif-bencheikh</a>
               </span>
               <span className="tile-arrow" aria-hidden="true"><ArrowIcon /></span>
             </a>
