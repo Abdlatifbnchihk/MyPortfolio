@@ -21,8 +21,8 @@ export default function ProjectCard({ project, revealRef }) {
       const r = card.getBoundingClientRect();
       const px = (e.clientX - r.left) / r.width;
       const py = (e.clientY - r.top) / r.height;
-      card.style.setProperty('--rx', ((0.5 - py) * 6).toFixed(2) + 'deg');
-      card.style.setProperty('--ry', ((px - 0.5) * 8).toFixed(2) + 'deg');
+      card.style.setProperty('--rx', ((0.5 - py) * 3).toFixed(2) + 'deg');
+      card.style.setProperty('--ry', ((px - 0.5) * 4).toFixed(2) + 'deg');
       card.style.setProperty('--mx', (px * 100).toFixed(1) + '%');
       card.style.setProperty('--my', (py * 100).toFixed(1) + '%');
     };
@@ -68,7 +68,12 @@ export default function ProjectCard({ project, revealRef }) {
           <p className="p-sum">{project.summary}</p>
           <ul className="p-tags">
             {project.tags.map((tag) => (
-              <li key={tag}>{tag}</li>
+              <li key={tag}>
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M3 4.25h10M3 8h10M3 11.75h6" />
+                </svg>
+                {tag}
+              </li>
             ))}
           </ul>
           <ul className="p-points">
